@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Six Caps 字體展示</title>
+  
+  <!-- 引入 Google Fonts - Six Caps 字體 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet">
+  
+  <!-- 引入輔助字體 -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary-color: #222;
+      --secondary-color: #e74c3c;
+      --bg-color: #f9f9f9;
+      --card-bg: #fff;
+      --text-light: #777;
+    }
+    
+    body {
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--primary-color);
+      background-color: var(--bg-color);
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    
+    .font-info {
+      background-color: var(--card-bg);
+      padding: 40px;
+      margin-bottom: 50px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      border-radius: 5px;
+    }
+    
+    .font-title {
+      font-family: 'Roboto', sans-serif;
+      font-size: 12px;
+      color: var(--text-light);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+    
+    h1 {
+      font-family: 'Six Caps', sans-serif;
+      font-size: 5rem;
+      margin: 0 0 20px 0;
+      color: var(--primary-color);
+      line-height: 1;
+      letter-spacing: 2px;
+    }
+    
+    h1 a {
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    h1 a:hover {
+      color: var(--secondary-color);
+    }
+    
+    h2 {
+      font-family: 'Six Caps', sans-serif;
+      font-size: 3rem;
+      margin: 60px 0 30px;
+      color: var(--primary-color);
+      letter-spacing: 2px;
+      position: relative;
+    }
+    
+    h2:after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: var(--secondary-color);
+      margin-top: 15px;
+    }
+    
+    .section {
+      margin-bottom: 60px;
+    }
+    
+    .alphabet {
+      font-family: 'Six Caps', sans-serif;
+      font-size: 2.5rem;
+      line-height: 1.5;
+      letter-spacing: 2px;
+      margin: 20px 0;
+    }
+    
+    .font-features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    
+    .feature-card {
+      background: var(--card-bg);
+      padding: 25px;
+      border-radius: 5px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+    
+    .feature-title {
+      font-family: 'Six Caps', sans-serif;
+      font-size: 1.8rem;
+      margin: 0 0 15px 0;
+      color: var(--primary-color);
+      letter-spacing: 2px;
+    }
+    
+    blockquote {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 300;
+      line-height: 1.8;
+      border-left: 3px solid var(--secondary-color);
+      padding: 25px 30px;
+      margin: 50px 0;
+      background: var(--card-bg);
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+    
+    .description {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: var(--text-light);
+      max-width: 700px;
+    }
+    
+    .example-heading {
+      font-family: 'Six Caps', sans-serif;
+      font-size: 2.5rem;
+      margin: 30px 0;
+      letter-spacing: 2px;
+    }
+    
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 3.5rem;
+      }
+      
+      h2 {
+        font-size: 2.5rem;
+      }
+      
+      .alphabet {
+        font-size: 2rem;
+      }
+      
+      .font-features {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="font-info">
+      <div class="font-title">Google Fonts 展示</div>
+      <h1>
+        <a href="https://fonts.google.com/specimen/Six+Caps" 
+           target="_blank" 
+           rel="noopener noreferrer">
+          SIX CAPS
+        </a>
+      </h1>
+      
+      <p class="description">Six Caps 是一款獨特的窄體大寫字體，源自於 Stephenson Blake 的 Engravers Old English 字體。它只有大寫字母且字重單一，非常適合用於標題、標識和強調文本，能創造出強烈的視覺效果。</p>
+    </div>
+    
+    <div class="section">
+      <h2>英文字母展示</h2>
+      <div class="alphabet">
+        A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>數字與符號</h2>
+      <div class="alphabet">
+        0 1 2 3 4 5 6 7 8 9
+      </div>
+      <div class="alphabet" style="margin-top: 20px;">
+        ! @ # $ % ^ & * ( ) _ + - = { } [ ] : ; " ' ? / . , ~
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>字體特色</h2>
+      <div class="font-features">
+        <div class="feature-card">
+          <div class="feature-title">獨特大寫設計</div>
+          <p>Six Caps 只有大寫字母，創造出強烈而一致的視覺效果。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-title">窄體比例</div>
+          <p>字母寬度較窄，適合在有限空間內展示更多內容。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-title">復古風格</div>
+          <p>源自 Engravers Old English 字體，帶有經典印刷風格。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-title">標題首選</div>
+          <p>特別適合用於標題、標識和強調文本。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-title">簡潔有力</div>
+          <p>單一字重設計，創造乾淨利落的視覺效果。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-title">高辨識度</div>
+          <p>獨特的字母形狀使其具有高度辨識性。</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>使用範例</h2>
+      <div class="alphabet" style="font-size: 3rem; margin-bottom: 30px;">
+        THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG
+      </div>
+      
+      <blockquote>
+        Six Caps 的窄體大寫設計使其成為海報、雜誌標題和品牌標識的理想選擇。它在復古風格項目中表現尤為出色，能夠創造出強烈的視覺衝擊。
+      </blockquote>
+      
+      <div class="example-heading">FILM TITLE SEQUENCE</div>
+      <div class="example-heading">BRAND LOGO DESIGN</div>
+      <div class="example-heading">EDITORIAL HEADLINES</div>
+    </div>
+  </div>
+</body>
+</html>

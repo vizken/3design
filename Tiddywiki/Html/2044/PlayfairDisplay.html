@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>字形展示 - Playfair Display</title>
+  
+  <!-- 引入 Google Fonts - Playfair Display 字體家族 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- 引入第二種字體作為對比 -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary-color: #5e412f;
+      --secondary-color: #d2b48c;
+      --bg-color: #fffaf0;
+    }
+    
+    body {
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--primary-color);
+      background-color: var(--bg-color);
+      padding: 20px;
+      margin: 0;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .font-info {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+    
+    .font-title {
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 5px;
+    }
+    
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+      margin: 0 0 20px 0;
+      color: var(--primary-color);
+    }
+    
+    h1 a:hover {
+      text-decoration: underline;
+      text-decoration-color: var(--secondary-color);
+    }
+    
+    h2 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin: 40px 0 20px;
+      border-bottom: 2px solid var(--secondary-color);
+      padding-bottom: 10px;
+    }
+    
+    .section {
+      margin-bottom: 40px;
+    }
+    
+    .alphabet {
+      font-size: 1.8rem;
+      line-height: 1.8;
+      letter-spacing: 1px;
+    }
+    
+    .font-weights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    
+    .weight-sample {
+      flex: 1;
+      min-width: 120px;
+      padding: 15px;
+      background: white;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    
+    .font-features {
+      columns: 2;
+      column-gap: 30px;
+    }
+    
+    @media (max-width: 768px) {
+      .font-features {
+        columns: 1;
+      }
+      
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="font-info">
+      <div class="font-title">Google Fonts 展示</div>
+      <h1>
+        <a href="https://fonts.google.com/specimen/Playfair+Display" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           style="color: inherit; text-decoration: none;">
+          Playfair Display
+        </a>
+      </h1>
+      
+      <p>Playfair Display 是一款優雅的襯線字體，由 Claus Eggers Sørensen 設計，靈感來自 18 世紀的啟蒙時代字體。它特別適合標題、大號文字和強調文本，能為設計帶來古典優雅的感覺。</p>
+      
+      <div class="font-weights">
+        <div class="weight-sample" style="font-weight: 400">Regular 400</div>
+        <div class="weight-sample" style="font-weight: 500">Medium 500</div>
+        <div class="weight-sample" style="font-weight: 600">SemiBold 600</div>
+        <div class="weight-sample" style="font-weight: 700">Bold 700</div>
+        <div class="weight-sample" style="font-weight: 800">ExtraBold 800</div>
+        <div class="weight-sample" style="font-weight: 900">Black 900</div>
+      </div>
+    </div>
+    
+    <!-- 其餘內容保持不變 -->
+    <div class="section">
+      <h2>英文字母展示</h2>
+      <div class="alphabet">
+        A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>
+        a b c d e f g h i j k l m n o p q r s t u v w x y z
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>數字與符號</h2>
+      <div class="alphabet">
+        0 1 2 3 4 5 6 7 8 9<br>
+        ! @ # $ % ^ & * ( ) _ + - = { } [ ] : ; " ' ? / . , ~
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>字體特色</h2>
+      <div class="font-features">
+        <p><strong>襯線設計：</strong>Playfair Display 擁有精緻的襯線，使字母在各種尺寸下都保持清晰可讀。</p>
+        <p><strong>高對比度：</strong>筆畫粗細對比明顯，賦予字體優雅的外觀。</p>
+        <p><strong>開放字懷：</strong>字母的開放空間增加了可讀性。</p>
+        <p><strong>多種字重：</strong>從 Regular 到 Black 共 6 種字重，滿足不同設計需求。</p>
+        <p><strong>適合標題：</strong>特別適合用於標題、引言和強調文本。</p>
+        <p><strong>多語言支持：</strong>支持包括西歐、中歐、東歐字母在內的多種語言。</p>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>使用範例</h2>
+      <p style="font-size: 1.5rem; line-height: 1.8;">"The quick brown fox jumps over the lazy dog" 是一個包含所有英文字母的經典句子。</p>
+      <p style="font-size: 1.2rem; font-style: italic;">Playfair Display 的斜體風格保留了其優雅特質，同時增加了動感。</p>
+      <blockquote style="font-size: 1.3rem; border-left: 3px solid var(--secondary-color); padding-left: 20px; margin-left: 0;">
+        在排版設計中，選擇合適的字體能大幅提升內容的可讀性和視覺吸引力。Playfair Display 特別適合需要傳達優雅、古典或精緻感的設計項目。
+      </blockquote>
+    </div>
+  </div>
+</body>
+</html>

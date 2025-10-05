@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>字形展示 - Lora</title>
+  
+  <!-- 引入 Google Fonts - Lora 字體家族 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- 引入輔助字體 -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary-color: #4a6b7e;
+      --secondary-color: #a7c4bc;
+      --bg-color: #f5f9fa;
+    }
+    
+    body {
+      font-family: 'Lora', serif;
+      font-size: 18px;
+      line-height: 1.7; /* 增加行高提升可讀性 */
+      color: var(--primary-color);
+      background-color: var(--bg-color);
+      padding: 20px;
+      margin: 0;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .font-info {
+      background-color: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+      margin-bottom: 40px;
+    }
+    
+    .font-title {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      color: #6d8a9a;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 8px;
+    }
+    
+    h1 {
+      font-size: 3.2rem;
+      font-weight: 600;
+      margin: 0 0 25px 0;
+      color: var(--primary-color);
+      line-height: 1.2;
+    }
+    
+    h1 a {
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    h1 a:hover {
+      color: #3a566b;
+      text-decoration: underline;
+      text-decoration-color: var(--secondary-color);
+      text-underline-offset: 6px;
+    }
+    
+    h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin: 50px 0 25px;
+      border-bottom: 1px solid var(--secondary-color);
+      padding-bottom: 8px;
+      color: #3a566b;
+    }
+    
+    .section {
+      margin-bottom: 50px;
+    }
+    
+    .alphabet {
+      font-size: 1.6rem;
+      line-height: 2;
+      letter-spacing: 0.5px;
+    }
+    
+    .font-weights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 25px;
+    }
+    
+    .weight-sample {
+      flex: 1;
+      min-width: 120px;
+      padding: 15px;
+      background: white;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    
+    .italic-sample {
+      font-style: italic;
+      color: #5a7b91;
+    }
+    
+    .font-features {
+      columns: 2;
+      column-gap: 40px;
+    }
+    
+    blockquote {
+      font-size: 1.25rem;
+      line-height: 1.8;
+      border-left: 4px solid var(--secondary-color);
+      padding-left: 25px;
+      margin: 30px 0;
+      color: #5a7b91;
+    }
+    
+    @media (max-width: 768px) {
+      .font-features {
+        columns: 1;
+      }
+      
+      h1 {
+        font-size: 2.3rem;
+      }
+      
+      .alphabet {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="font-info">
+      <div class="font-title">Google Fonts 展示</div>
+      <h1>
+        <a href="https://fonts.google.com/specimen/Lora" 
+           target="_blank" 
+           rel="noopener noreferrer">
+          Lora
+        </a>
+      </h1>
+      
+      <p>Lora 是一款優雅的襯線字體，專為正文閱讀設計，由 Cyreal 設計公司創作。其平衡的比例和溫暖的外觀使其成為部落格、雜誌和長文閱讀的理想選擇。字體帶有現代風格的襯線，在較大尺寸時展現優雅特質，在小字號時仍保持極佳的可讀性。</p>
+      
+      <div class="font-weights">
+        <div class="weight-sample" style="font-weight: 400">Regular 400</div>
+        <div class="weight-sample" style="font-weight: 500">Medium 500</div>
+        <div class="weight-sample" style="font-weight: 600">SemiBold 600</div>
+        <div class="weight-sample" style="font-weight: 700">Bold 700</div>
+        <div class="weight-sample italic-sample" style="font-weight: 400">Italic</div>
+        <div class="weight-sample italic-sample" style="font-weight: 700">Bold Italic</div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>英文字母展示</h2>
+      <div class="alphabet">
+        A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>
+        a b c d e f g h i j k l m n o p q r s t u v w x y z
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>數字與符號</h2>
+      <div class="alphabet">
+        0 1 2 3 4 5 6 7 8 9<br>
+        ! @ # $ % ^ & * ( ) _ + - = { } [ ] : ; " ' ? / . , ~
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>字體特色</h2>
+      <div class="font-features">
+        <p><strong>閱讀優化：</strong>Lora 專為長文閱讀設計，即使在長時間閱讀下也不易造成視覺疲勞。</p>
+        <p><strong>中等對比度：</strong>筆畫粗細對比適中，兼具優雅感和實用性。</p>
+        <p><strong>圓潤襯線：</strong>襯線設計圓潤流暢，賦予字體溫暖親和的感覺。</p>
+        <p><strong>完整字重：</strong>提供 Regular 到 Bold 四種字重及對應斜體。</p>
+        <p><strong>多用途：</strong>既適合正文也適用於標題，特別適合文藝類內容。</p>
+        <p><strong>西里爾字母支持：</strong>完整支持西歐和西里爾字母系統。</p>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>使用範例</h2>
+      <p style="font-size: 1.4rem; line-height: 1.9;">"Typography is the craft of endowing human language with a durable visual form." — Robert Bringhurst</p>
+      <p class="italic-sample" style="font-size: 1.2rem;">Lora 的斜體風格流暢自然，特別適合用於引言、註釋和強調文本。</p>
+      <blockquote>
+        Lora 的設計靈感來自當代書法，但保持了傳統印刷字體的結構。它在數位屏幕上表現出色，這要歸功於其開放的字母形狀和適中的x高度。這款字體特別適合需要傳達溫暖、可信賴感的設計項目。
+      </blockquote>
+    </div>
+  </div>
+</body>
+</html>
