@@ -84,7 +84,7 @@ figures.forEach(f=>{const a=f.querySelector('a');a.addEventListener('click',e=>{
 dialog.querySelector('.lightbox-close').addEventListener('click',()=>dialog.close());
 dialog.querySelector('.lightbox-prev').addEventListener('click',()=>show(current-1));
 dialog.querySelector('.lightbox-next').addEventListener('click',()=>show(current+1));
-dialog.addEventListener('keydown',e=>{if(e.key==='ArrowLeft'){e.preventDefault();show(current-1);}if(e.key==='ArrowRight'){e.preventDefault();show(current+1);}});
+dialog.addEventListener('keydown',e=>{if(e.key==='Escape'){e.preventDefault();dialog.close();return;}if(e.key==='ArrowLeft'){e.preventDefault();show(current-1);}if(e.key==='ArrowRight'){e.preventDefault();show(current+1);}});
 dialog.addEventListener('close',()=>{if(returnFocus)returnFocus.focus({preventScroll:true});});
 })();
 </script></body></html>
